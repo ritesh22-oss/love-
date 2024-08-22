@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Love Story Game</title>
+    <link rel="stylesheet" href="sryle.css">
+</head>
+<body>
+    <div id="scene-1" class="scene active">
+        <h1> The First Meeting</h1>
+        <p><strong>Spidy:</strong> "Hey, I don't think we've met before. I'm spidy."</p>
+        <p class="question"><strong></strong >Do you believe in love at first sight, or do you think it's more about understanding and growing together?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(1, 'love_at_first_sight')">Love at First Sight</button>
+            <button class="button" onclick="chooseOption(1, '1')">Understanding and Growing Together</button>
+        </div>
+    </div>
+
+    <div id="scene-2" class="scene">
+        <h1> Getting to Know Each Other</h1>
+        <p class="question"><strong>Spidy:If you had to choose between pursuing a passion that might not guarantee success and a stable career, which would you choose and why?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(2, 'passion')">Pursue Passion</button>
+            <button class="button" onclick="chooseOption(2, '2')">Stable Career</button>
+        </div>
+    </div>
+
+    <div id="scene-3" class="scene">
+        <h1> A Shared Interest</h1>
+        <p><strong>Spidy:</strong> "I love traveling too! What's your favorite destination?"</p>
+        <p class="question">Would you rather explore a new country alone or revisit a familiar place with friends?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(3, '3')">Explore Alone</button>
+            <button class="button" onclick="chooseOption(3, 'with_friends')">Revisit with Friends</button>
+        </div>
+    </div>
+
+    <div id="scene-4" class="scene">
+        <h1> Finding Common Ground</h1>
+        <p><strong>Spidy:</strong> "It's great that we share similar interests"</p>
+        <p class="question">If you could live in a world from your favorite book, which would it be and why?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(4, '4')">Fantasy World</button>
+            <button class="button" onclick="chooseOption(4, 'historical')">Historical World</button>
+        </div>
+    </div>
+
+    <div id="scene-5" class="scene">
+        <h1> Exploring Shared Interests</h1>
+        <p><strong>Emma:</strong> "Fiction is amazing! Do you prefer classic or modern fiction?"</p>
+        <p class="question">Which aspect of fiction do you find more compelling: the intricate plots of classics or the relatable themes of modern works?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(5, '5')">Intricate Plots</button>
+            <button class="button" onclick="chooseOption(5, 'modern')">Relatable Themes</button>
+        </div>
+    </div>
+
+    <div id="scene-6" class="scene">
+        <h1> Talking About Life Goals</h1>
+        <p><strong>Spidy:</strong> "Aside from reading, what are your life goals?"</p>
+        <p class="question">Do you prioritize achieving external success or finding internal satisfaction?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(6, 'external_success')">External Success</button>
+            <button class="button" onclick="chooseOption(6, '6')">Internal Satisfaction</button>
+        </div>
+    </div>
+
+    <div id="scene-7" class="scene">
+        <h1>Discussing Future Plans</h1>
+        <p><strong>Spidy:</strong> "That's interesting. Do you see yourself living in a big city or a small town?"</p>
+        <p class="question">Would you choose a fast-paced city life with constant change or a quiet town with stability?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(7, 'city_life')">Fast-Paced City Life</button>
+            <button class="button" onclick="chooseOption(7, '7')">Quiet Town Stability</button>
+        </div>
+    </div>
+
+    <div id="scene-8" class="scene">
+        <h1> Talking About Family</h1>
+        <p><strong>Spidy:</strong> "What kind of family do you have?"</p>
+        <p class="question">How do you balance family expectations with your personal goals and desires?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(8, 'balance')">Balance</button>
+            <button class="button" onclick="chooseOption(8, '8')">Compromise</button>
+        </div>
+    </div>
+
+    <div id="scene-9" class="scene">
+        <h1> Exploring Relationship Views</h1>
+        <p><strong>Spidy:</strong> "How do you define a successful relationship?"</p>
+        <p class="question">Do you think a successful relationship requires equal effort from both partners or is it more about adapting to each other’s needs?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(9, '9')">Equal Effort</button>
+            <button class="button" onclick="chooseOption(9, 'adapting')">Adapting to Needs</button>
+        </div>
+    </div>
+
+    <div id="scene-10" class="scene">
+        <h1> Talking About Hobbies</h1>
+        <p><strong>Spidy:</strong> "Besides books and travel, do you have any other hobbies?"</p>
+        <p class="question">Would you rather excel in a single hobby or be proficient in multiple hobbies?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(10, 'single_hobby')">Excel in One Hobby</button>
+            <button class="button" onclick="chooseOption(10, '10')">Proficient in Many</button>
+        </div>
+    </div>
+
+    <div id="scene-11" class="scene">
+        <h1> Discussing Personal Values</h1>
+        <p><strong>Spidy:</strong> "What values are most important to you?"</p>
+        <p class="question">Do you prioritize sticking to your principles even if it means personal sacrifice or adapting your values to fit the situation?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(11, '11')">Sticking to Principles</button>
+            <button class="button" onclick="chooseOption(11, 'adapting_values')">Adapting Values</button>
+        </div>
+    </div>
+
+    <div id="scene-12" class="scene">
+        <h1> Talking About Pets</h1>
+        <p><strong>Spidy:</strong> "Do you have any pets?"</p>
+        <p class="question">Would you rather have a pet that requires a lot of care or one that is low maintenance but not as interactive?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(12, '12')">High Care</button>
+            <button class="button" onclick="chooseOption(12, 'low_maintenance')">Low Maintenance</button>
+        </div>
+    </div>
+
+    <div id="scene-13" class="scene">
+        <h1> Talking About Dreams</h1>
+        <p><strong>Spidy:</strong> "What’s your biggest dream?"</p>
+        <p class="question">Do you think it’s more important to achieve your dream by following a clear plan or by seizing spontaneous opportunities?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(13, 'clear_plan')">Following a Clear Plan</button>
+            <button class="button" onclick="chooseOption(13, '13')">Seizing Opportunities</button>
+        </div>
+    </div>
+
+    <div id="scene-14" class="scene">
+        <h1> Discussing Personal Growth</h1>
+        <p><strong>Spidy:</strong> "How do you approach personal growth?"</p>
+        <p class="question">Do you prefer setting and achieving specific goals or focusing on continuous self-improvement?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(14, 'specific_goals')">Setting Specific Goals</button>
+            <button class="button" onclick="chooseOption(14, '14')">Continuous Self-Improvement</button>
+        </div>
+    </div>
+
+    <div id="scene-15" class="scene">
+        <h1> Talking About Friendships</h1>
+        <p><strong>Spidy:</strong> "What qualities do you value in a friend?"</p>
+        <p class="question">Would you rather have a few close friends who truly understand you or many friends who are simply acquaintances?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(15, '15')">Few Close Friends</button>
+            <button class="button" onclick="chooseOption(15, 'many_acquaintances')">Many Acquaintances</button>
+        </div>
+    </div>
+
+    <div id="scene-16" class="scene">
+        <h1> Talking About Work-Life Balance</h1>
+        <p><strong>Spidy:</strong> "How do you balance work and personal life?"</p>
+        <p class="question">Is it more important to set boundaries at work or find ways to integrate your personal and professional lives seamlessly?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(16, 'boundaries')">Set Boundaries</button>
+            <button class="button" onclick="chooseOption(16, '16')">Integrate Lives</button>
+        </div>
+    </div>
+
+    <div id="scene-17" class="scene">
+        <h1> Talking About Life Philosophy</h1>
+        <p><strong>Spidy:</strong> "Do you have a life philosophy?"</p>
+        <p class="question">Do you believe in fate and destiny, or do you think our lives are shaped by the choices we make?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(17, 'fate_destiny')">Fate and Destiny</button>
+            <button class="button" onclick="chooseOption(17, '17')">Choices We Make</button>
+        </div>
+    </div>
+
+    <div id="scene-18" class="scene">
+        <h1> Talking About Change</h1>
+        <p><strong>Spidy:</strong> "How do you deal with change?"</p>
+        <p class="question">Do you embrace change as an opportunity for growth or prefer stability and predictability?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(18, '18')">Embrace Change</button>
+            <button class="button" onclick="chooseOption(18, 'stability')">Prefer Stability</button>
+        </div>
+    </div>
+
+    <div id="scene-19" class="scene">
+        <h1> Talking About Regrets</h1>
+        <p><strong>Spidy:</strong> "Do you have any regrets?"</p>
+        <p class="question">Do you believe regrets are a chance to learn and grow or something to be avoided at all costs?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(19, '19')">Chance to Learn</button>
+            <button class="button" onclick="chooseOption(19, 'avoid')">Avoid at All Costs</button>
+        </div>
+    </div>
+
+    <div id="scene-20" class="scene">
+        <h1> The Heartfelt Goodbye</h1>
+        <p><strong>Spidy:</strong> "It's been amazing talking to you. What’s the most important lesson you've learned in life?"</p>
+        <p class="question">Do you think the most important lesson in life is about finding happiness or understanding the nature of relationships?</p>
+        <div class="choices">
+            <button class="button" onclick="chooseOption(20, '20')">Finding Happiness</button>
+            <button class="button" onclick="chooseOption(20, 'relationships')">Understanding Relationships</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
